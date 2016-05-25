@@ -29,3 +29,6 @@ Finally, import the cards into Anki:
  * Import the cards TSV into a deck. There are 4 fields in the TSV: original subtitle, translated subtitle, image and audio.
 
 <img width="635" alt="screen shot 2016-05-25 at 10 15 31" src="https://cloud.githubusercontent.com/assets/381895/15532887/455f63d6-2262-11e6-8533-8db8fad228a7.png">
+
+## Offline videos
+You can also create cards from local files other than from YouTube. The script requires that the subtitles are in the VTT format. To convert from SRT and other formats, use http://www.webvtt.org/ or https://github.com/nwoltman/srt-to-vtt-converter.
