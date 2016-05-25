@@ -26,9 +26,9 @@ for i in $(sed 's/^$/␞/g' "$subs"); do
     fi
 
     now=$(date '+%Y-%m-%d-%H-%M')
-    sound="$(echo "${now}__${start}_${end}" | sed 's/[.:]/-/g').aac"
+    sound="$(echo "${now}__${start}_${end}" | sed 's/[.:]/-/g').mp3"
     image="$(echo "${now}__${start}" | sed 's/[.:]/-/g').jpg"
-    ffmpeg -v 0 -n -ss "$start" -i "$video"  -to "$end" -vn -acodec copy "$output/$sound"
+    ffmpeg -v 0 -n -i "$video" -ss "$start" -to "$end" -q:a 5 -map a "$output/$sound"
     ffmpeg -v 0 -n -ss "$start" -i "$video" -vframes 1 -q:v 5 "$output/$image"
 
     echo -e "${text}\t${tr_text}\t${image}\t[sound:${sound}]"
