@@ -28,4 +28,4 @@ Finally, import the cards into Anki:
  * Copy the audio and image files from `./output` to your Anki media collection folder.
  * Import the cards TSV into a deck. There are 4 fields in the TSV: original subtitle, translated subtitle, image and audio.
 
-<img width="635" https://cloud.githubusercontent.com/assets/381895/15532728/a1725666-2261-11e6-99de-7b2403e2cb85.png">
+<img width="635" alt="screen shot 2016-05-25 at 10 15 31" src="https://cloud.githubusercontent.com/assets/381895/15532887/455f63d6-2262-11e6-8533-8db8fad228a7.png">
