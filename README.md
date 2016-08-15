@@ -2,6 +2,8 @@
 
 Extract screenshots & audio clips from YouTube videos into Anki cards.
 
+### 📖 [使い方（日本語で）](http://rs.luminousspice.com/anki-card-from-youtobe-caption/)
+
 ## Installation
 You'll need to install `youtube-dl` and `ffmpeg`:
 
