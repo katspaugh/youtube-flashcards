@@ -1,0 +1,21 @@
+{
+  "name": "youtube-flashcards",
+  "version": "1.0.0",
+  "description": "Extract screenshots & audio clips from YouTube videos into Anki cards.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katspaugh/youtube-flashcards.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katspaugh/youtube-flashcards/issues"
+  },
+  "homepage": "https://github.com/katspaugh/youtube-flashcards#readme",
+  "dependencies": {}
+}
