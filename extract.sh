@@ -15,7 +15,7 @@ for i in $(sed 's/^$/␞/g' "$subs"); do
     line=$(echo "$i" | tail -n +2)
     [[ -z $(echo "$line" | grep -E ' \-\-> ') ]] && continue
 
-    if [ -z $(echo "$line" | head -n +1 | grep -E ' \-\-> ') ]; then
+    if [[ -z $(echo "$line" | head -n +1 | grep -E ' \-\-> ') ]]; then
         line=$(echo "$line" | tail -n +2)
     fi
 
@@ -31,7 +31,7 @@ for i in $(sed 's/^$/␞/g' "$subs"); do
     start=$(echo "$stamps" | head -n 1)
     end=$(echo "$stamps" | tail -n 1)
 
-    if [ -f "$tr_subs" ]; then
+    if [[ -f "$tr_subs" ]]; then
         tr_text=$(grep -A 10 "$times" "$tr_subs" | awk "/$times/,/^$/" | tail -n +2 | tr '\n' '␞' | sed -E 's/␞$//' | sed -E 's/␞+/<br>/g')
     else
         tr_text=''
