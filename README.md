@@ -24,7 +24,7 @@ That will download the video and subs into the `./downloads` folder.
 Next, extract the cards (it may take a while):
 
 ```
-./extract.sh downloads/Frau_Holle.mp4 downloads/Frau_Holle.de.vtt downloads/Frau_Holle.en.vtt > cards.tsv
+./bin/videocards downloads/Frau_Holle.mp4 downloads/Frau_Holle.de.vtt downloads/Frau_Holle.en.vtt
 ```
 
 The parameters are:
